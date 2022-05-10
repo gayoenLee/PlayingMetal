@@ -15,6 +15,7 @@
 		3210695E2823C3A40032EDF4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3210695D2823C3A40032EDF4 /* SnapKit */; };
 		321069612823C4BB0032EDF4 /* UIColor+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321069602823C4BB0032EDF4 /* UIColor+DesignSystem.swift */; };
 		321069632823C7290032EDF4 /* HomeButtonTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321069622823C7290032EDF4 /* HomeButtonTableView.swift */; };
+		32106965282A86940032EDF4 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32106964282A86940032EDF4 /* UIColor+.swift */; };
 		327FE13C2820129C003CE609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE13B2820129C003CE609 /* AppDelegate.swift */; };
 		327FE13E2820129C003CE609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE13D2820129C003CE609 /* SceneDelegate.swift */; };
 		327FE1402820129C003CE609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE13F2820129C003CE609 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 		3210695A2823BE810032EDF4 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		321069602823C4BB0032EDF4 /* UIColor+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+DesignSystem.swift"; sourceTree = "<group>"; };
 		321069622823C7290032EDF4 /* HomeButtonTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonTableView.swift; sourceTree = "<group>"; };
+		32106964282A86940032EDF4 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		327FE1382820129C003CE609 /* SilverGun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverGun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		327FE13B2820129C003CE609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		327FE13D2820129C003CE609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				321069602823C4BB0032EDF4 /* UIColor+DesignSystem.swift */,
+				32106964282A86940032EDF4 /* UIColor+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				327FE1402820129C003CE609 /* ViewController.swift in Sources */,
 				327FE13C2820129C003CE609 /* AppDelegate.swift in Sources */,
 				3210695B2823BE810032EDF4 /* ButtonTableViewCell.swift in Sources */,
+				32106965282A86940032EDF4 /* UIColor+.swift in Sources */,
 				321069612823C4BB0032EDF4 /* UIColor+DesignSystem.swift in Sources */,
 				321069562821654C0032EDF4 /* HomeView.swift in Sources */,
 				327FE13E2820129C003CE609 /* SceneDelegate.swift in Sources */,
