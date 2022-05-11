@@ -16,9 +16,10 @@
 		321069612823C4BB0032EDF4 /* UIColor+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321069602823C4BB0032EDF4 /* UIColor+DesignSystem.swift */; };
 		321069632823C7290032EDF4 /* HomeButtonTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321069622823C7290032EDF4 /* HomeButtonTableView.swift */; };
 		32106965282A86940032EDF4 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32106964282A86940032EDF4 /* UIColor+.swift */; };
+		32106969282BD7A80032EDF4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32106968282BD7A80032EDF4 /* RootViewController.swift */; };
+		3210696C282BD80C0032EDF4 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3210696B282BD80C0032EDF4 /* Then */; };
 		327FE13C2820129C003CE609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE13B2820129C003CE609 /* AppDelegate.swift */; };
 		327FE13E2820129C003CE609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE13D2820129C003CE609 /* SceneDelegate.swift */; };
-		327FE1402820129C003CE609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE13F2820129C003CE609 /* ViewController.swift */; };
 		327FE1432820129C003CE609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327FE1412820129C003CE609 /* Main.storyboard */; };
 		327FE1452820129D003CE609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327FE1442820129D003CE609 /* Assets.xcassets */; };
 		327FE1482820129D003CE609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327FE1462820129D003CE609 /* LaunchScreen.storyboard */; };
@@ -33,10 +34,10 @@
 		321069602823C4BB0032EDF4 /* UIColor+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+DesignSystem.swift"; sourceTree = "<group>"; };
 		321069622823C7290032EDF4 /* HomeButtonTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonTableView.swift; sourceTree = "<group>"; };
 		32106964282A86940032EDF4 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		32106968282BD7A80032EDF4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		327FE1382820129C003CE609 /* SilverGun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverGun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		327FE13B2820129C003CE609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		327FE13D2820129C003CE609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		327FE13F2820129C003CE609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		327FE1422820129C003CE609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		327FE1442820129D003CE609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		327FE1472820129D003CE609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3210695E2823C3A40032EDF4 /* SnapKit in Frameworks */,
+				3210696C282BD80C0032EDF4 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,11 +110,11 @@
 				32106950282162E90032EDF4 /* Home */,
 				327FE13B2820129C003CE609 /* AppDelegate.swift */,
 				327FE13D2820129C003CE609 /* SceneDelegate.swift */,
-				327FE13F2820129C003CE609 /* ViewController.swift */,
 				327FE1412820129C003CE609 /* Main.storyboard */,
 				327FE1442820129D003CE609 /* Assets.xcassets */,
 				327FE1462820129D003CE609 /* LaunchScreen.storyboard */,
 				327FE1492820129D003CE609 /* Info.plist */,
+				32106968282BD7A80032EDF4 /* RootViewController.swift */,
 			);
 			path = SilverGun;
 			sourceTree = "<group>";
@@ -135,6 +137,7 @@
 			name = SilverGun;
 			packageProductDependencies = (
 				3210695D2823C3A40032EDF4 /* SnapKit */,
+				3210696B282BD80C0032EDF4 /* Then */,
 			);
 			productName = SilverGun;
 			productReference = 327FE1382820129C003CE609 /* SilverGun.app */;
@@ -166,6 +169,7 @@
 			mainGroup = 327FE12F2820129C003CE609;
 			packageReferences = (
 				3210695C2823C3A40032EDF4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3210696A282BD80C0032EDF4 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 327FE1392820129C003CE609 /* Products */;
 			projectDirPath = "";
@@ -195,9 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				321069542821645A0032EDF4 /* HomeViewController.swift in Sources */,
-				327FE1402820129C003CE609 /* ViewController.swift in Sources */,
 				327FE13C2820129C003CE609 /* AppDelegate.swift in Sources */,
 				3210695B2823BE810032EDF4 /* ButtonTableViewCell.swift in Sources */,
+				32106969282BD7A80032EDF4 /* RootViewController.swift in Sources */,
 				32106965282A86940032EDF4 /* UIColor+.swift in Sources */,
 				321069612823C4BB0032EDF4 /* UIColor+DesignSystem.swift in Sources */,
 				321069562821654C0032EDF4 /* HomeView.swift in Sources */,
@@ -432,6 +436,14 @@
 				minimumVersion = 5.0.1;
 			};
 		};
+		3210696A282BD80C0032EDF4 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -439,6 +451,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3210695C2823C3A40032EDF4 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		3210696B282BD80C0032EDF4 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3210696A282BD80C0032EDF4 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
