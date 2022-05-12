@@ -18,6 +18,10 @@
 		32106965282A86940032EDF4 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32106964282A86940032EDF4 /* UIColor+.swift */; };
 		32106969282BD7A80032EDF4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32106968282BD7A80032EDF4 /* RootViewController.swift */; };
 		3210696C282BD80C0032EDF4 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3210696B282BD80C0032EDF4 /* Then */; };
+		3210696F282D32690032EDF4 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3210696E282D32690032EDF4 /* CarView.swift */; };
+		32106971282D32770032EDF4 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32106970282D32770032EDF4 /* CarViewController.swift */; };
+		32106973282D32820032EDF4 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32106972282D32820032EDF4 /* CarViewModel.swift */; };
+		32106977282D3F7E0032EDF4 /* RendererHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32106976282D3F7E0032EDF4 /* RendererHelper.swift */; };
 		327FE13C2820129C003CE609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE13B2820129C003CE609 /* AppDelegate.swift */; };
 		327FE13E2820129C003CE609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FE13D2820129C003CE609 /* SceneDelegate.swift */; };
 		327FE1432820129C003CE609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327FE1412820129C003CE609 /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 		321069622823C7290032EDF4 /* HomeButtonTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonTableView.swift; sourceTree = "<group>"; };
 		32106964282A86940032EDF4 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		32106968282BD7A80032EDF4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		3210696E282D32690032EDF4 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		32106970282D32770032EDF4 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		32106972282D32820032EDF4 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		32106976282D3F7E0032EDF4 /* RendererHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererHelper.swift; sourceTree = "<group>"; };
 		327FE1382820129C003CE609 /* SilverGun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverGun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		327FE13B2820129C003CE609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		327FE13D2820129C003CE609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +94,17 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		3210696D282D32580032EDF4 /* CarMetal */ = {
+			isa = PBXGroup;
+			children = (
+				3210696E282D32690032EDF4 /* CarView.swift */,
+				32106970282D32770032EDF4 /* CarViewController.swift */,
+				32106972282D32820032EDF4 /* CarViewModel.swift */,
+				32106976282D3F7E0032EDF4 /* RendererHelper.swift */,
+			);
+			path = CarMetal;
+			sourceTree = "<group>";
+		};
 		327FE12F2820129C003CE609 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +124,7 @@
 		327FE13A2820129C003CE609 /* SilverGun */ = {
 			isa = PBXGroup;
 			children = (
+				3210696D282D32580032EDF4 /* CarMetal */,
 				3210695F2823C4A70032EDF4 /* Extension */,
 				321069572823B4BA0032EDF4 /* Common */,
 				32106950282162E90032EDF4 /* Home */,
@@ -199,16 +219,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				321069542821645A0032EDF4 /* HomeViewController.swift in Sources */,
+				32106973282D32820032EDF4 /* CarViewModel.swift in Sources */,
 				327FE13C2820129C003CE609 /* AppDelegate.swift in Sources */,
 				3210695B2823BE810032EDF4 /* ButtonTableViewCell.swift in Sources */,
 				32106969282BD7A80032EDF4 /* RootViewController.swift in Sources */,
 				32106965282A86940032EDF4 /* UIColor+.swift in Sources */,
+				3210696F282D32690032EDF4 /* CarView.swift in Sources */,
 				321069612823C4BB0032EDF4 /* UIColor+DesignSystem.swift in Sources */,
+				32106977282D3F7E0032EDF4 /* RendererHelper.swift in Sources */,
 				321069562821654C0032EDF4 /* HomeView.swift in Sources */,
 				327FE13E2820129C003CE609 /* SceneDelegate.swift in Sources */,
 				32106952282163010032EDF4 /* HomeViewModel.swift in Sources */,
 				321069632823C7290032EDF4 /* HomeButtonTableView.swift in Sources */,
 				321069592823B4C60032EDF4 /* ViewModelType.swift in Sources */,
+				32106971282D32770032EDF4 /* CarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
