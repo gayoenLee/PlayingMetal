@@ -31,16 +31,15 @@ final class HomeView : UIView {
         self.addSubview(rainBtn)
         carBtn.translatesAutoresizingMaskIntoConstraints = false
         rainBtn.translatesAutoresizingMaskIntoConstraints = false
-//        carBtn.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-//        carBtn.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-//        carBtn.widthAnchor.constraint(equalToConstant: 300).isActive = true
-//        carBtn.heightAnchor.constraint(equalToConstant: 100).isActive = true
+
         self.carBtn.snp.makeConstraints{ make in
-            make.edges.equalToSuperview()
+            make.leading.equalToSuperview().offset(50)
+            make.top.equalToSuperview().offset(100)
         }
         
         self.rainBtn.snp.makeConstraints{ make in
-            
+            make.leading.equalToSuperview().offset(50)
+            make.top.equalTo(carBtn.snp_bottomMargin).offset(10)
         }
     }
     
@@ -52,10 +51,22 @@ final class HomeView : UIView {
             $0.addTarget(self, action: #selector(goCarMetal(sender:)), for: .touchUpInside)
             $0.backgroundColor = .gray
         }
+        
+        self.rainBtn.do{
+            $0.tintColor = .blue
+            $0.setTitle("비내리는", for: .normal)
+            $0.setTitleColor(.orange, for: .normal)
+            $0.addTarget(self, action: #selector(rainingClicked(sender:)), for: .touchUpInside)
+            $0.backgroundColor = .gray
+        }
     }
     
     @objc private func goCarMetal(sender: UIButton) {
         print("자동차 메탈 버튼 클릭")
+    }
+    
+    @objc private func rainingClicked(sender: UIButton) {
+        print("비내리는 메탈 버튼 클릭")
     }
     
     
