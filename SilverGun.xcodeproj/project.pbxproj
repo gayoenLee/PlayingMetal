@@ -27,6 +27,7 @@
 		327FE1432820129C003CE609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327FE1412820129C003CE609 /* Main.storyboard */; };
 		327FE1452820129D003CE609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327FE1442820129D003CE609 /* Assets.xcassets */; };
 		327FE1482820129D003CE609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327FE1462820129D003CE609 /* LaunchScreen.storyboard */; };
+		32C26150283277340068FF05 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 32C2614F283277340068FF05 /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		327FE1442820129D003CE609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		327FE1472820129D003CE609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		327FE1492820129D003CE609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32C2614F283277340068FF05 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		327FE13A2820129C003CE609 /* SilverGun */ = {
 			isa = PBXGroup;
 			children = (
+				32C2614E2832771A0068FF05 /* Shader */,
 				3210696D282D32580032EDF4 /* CarMetal */,
 				3210695F2823C4A70032EDF4 /* Extension */,
 				321069572823B4BA0032EDF4 /* Common */,
@@ -137,6 +140,14 @@
 				32106968282BD7A80032EDF4 /* RootViewController.swift */,
 			);
 			path = SilverGun;
+			sourceTree = "<group>";
+		};
+		32C2614E2832771A0068FF05 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				32C2614F283277340068FF05 /* Shaders.metal */,
+			);
+			path = Shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +237,7 @@
 				32106965282A86940032EDF4 /* UIColor+.swift in Sources */,
 				3210696F282D32690032EDF4 /* CarView.swift in Sources */,
 				321069612823C4BB0032EDF4 /* UIColor+DesignSystem.swift in Sources */,
+				32C26150283277340068FF05 /* Shaders.metal in Sources */,
 				32106977282D3F7E0032EDF4 /* RendererHelper.swift in Sources */,
 				321069562821654C0032EDF4 /* HomeView.swift in Sources */,
 				327FE13E2820129C003CE609 /* SceneDelegate.swift in Sources */,
