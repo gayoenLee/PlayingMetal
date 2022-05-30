@@ -13,6 +13,7 @@ final class HomeView : UIView {
     
     var carBtn = UIButton(frame: .zero)
     var rainBtn = UIButton(frame: .zero)
+    weak var delegate: HomeViewModelDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -63,12 +64,17 @@ final class HomeView : UIView {
     
     @objc private func goCarMetal(sender: UIButton) {
         print("자동차 메탈 버튼 클릭")
+        self.delegate?.clickedCarBtn(self)
+      
     }
     
     @objc private func rainingClicked(sender: UIButton) {
         print("비내리는 메탈 버튼 클릭")
     }
-    
-    
-    
+}
+
+extension HomeView {
+    func clickedCarBtn(){
+        
+    }
 }
