@@ -30,7 +30,7 @@ final class CarView : MTKView {
     }
     
     func createRenderer(device : MTLDevice!, metalView : CarView){
-        viewModel = CarViewModel(view: metalView, device: device)
+        viewModel = CarViewModel()
         delegate = viewModel
     }
     
