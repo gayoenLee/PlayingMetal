@@ -38,7 +38,9 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController : HomeViewModelDelegate {
-    func clickedCarBtn() {
+    func clickedCarBtn(_ view: HomeView) {
         print("show metal car view btn clicked")
     }
+    
+
 }
