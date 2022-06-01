@@ -13,7 +13,7 @@ final class HomeView : UIView {
     
     var carBtn = UIButton(frame: .zero)
     var rainBtn = UIButton(frame: .zero)
-    weak var delegate: HomeViewModelDelegate?
+    weak var delegate: HomeViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
