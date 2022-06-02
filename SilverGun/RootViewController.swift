@@ -29,7 +29,7 @@ final class RootViewController : UITabBarController {
     
     
     private func setupTabBarViewControllers(){
-        let viewControllers = [homeViewController]
+        let viewControllers = [homeViewController, carViewController]
         self.setViewControllers(viewControllers, animated: false)
     }
     
@@ -42,5 +42,13 @@ final class RootViewController : UITabBarController {
         navigationController.setNavigationBarHidden(true, animated: false)
         navigationController.modalPresentationStyle = .fullScreen
         return navigationController
+    }()
+    
+    private lazy var carViewController: UINavigationController = {
+        let carViewModel = CarViewModel()
+        let carViewController = CarViewController(viewModel: carViewModel).then {
+            $0.tabBarItem = UITabBarItem(title: "Car", image: nil, selectedImage: nil)
+        }
+        return UINavigationController(rootViewController: carViewController)
     }()
 }

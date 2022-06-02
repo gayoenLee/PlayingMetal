@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, HomeViewDelegate {
     
     private let viewModel: HomeViewModel
     private let homeView = HomeView(frame: .zero)
@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
         self.viewModel = viewModel
         
         super.init(nibName: nil, bundle: nil)
-        self.viewModel.delegate = self
+        self.homeView.delegate = self
         self.setupHomeView()
     }
     
@@ -37,8 +37,20 @@ class HomeViewController: UIViewController {
     
 }
 
-extension HomeViewController : HomeViewModelDelegate {
-    func clickedCarBtn() {
+extension HomeViewController  {
+    func clickedCarBtn(_ view: HomeView) {
         print("show metal car view btn clicked")
+        self.moveToView()
+    }
+    
+
+}
+
+extension HomeViewController{
+    private func moveToView(){
+        print("MoveToView")
+        let carViewModel = CarViewModel()
+        let carViewController = CarViewController(viewModel: carViewModel)
+        self.navigationController?.pushViewController(carViewController, animated: true)
     }
 }

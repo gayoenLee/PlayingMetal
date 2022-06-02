@@ -8,14 +8,13 @@
 import Foundation
 import UIKit
 
-protocol HomeViewModelDelegate: AnyObject{
-    func clickedCarBtn()
+protocol HomeViewDelegate: AnyObject{
+    func clickedCarBtn(_ view: HomeView)
 }
 
 
 class HomeViewModel {
-  
-    weak var delegate: HomeViewModelDelegate?
-    
+      
+
     
 }
