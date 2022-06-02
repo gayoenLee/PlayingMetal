@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3208A843283D088900A68CDA /* FilterShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3208A842283D088900A68CDA /* FilterShader.metal */; };
 		32106952282163010032EDF4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32106951282163010032EDF4 /* HomeViewModel.swift */; };
 		321069542821645A0032EDF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321069532821645A0032EDF4 /* HomeViewController.swift */; };
 		321069562821654C0032EDF4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321069552821654C0032EDF4 /* HomeView.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3208A842283D088900A68CDA /* FilterShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FilterShader.metal; sourceTree = "<group>"; };
 		32106951282163010032EDF4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		321069532821645A0032EDF4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		321069552821654C0032EDF4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				32C2614F283277340068FF05 /* Shaders.metal */,
+				3208A842283D088900A68CDA /* FilterShader.metal */,
 			);
 			path = Shader;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				32C26150283277340068FF05 /* Shaders.metal in Sources */,
 				32106977282D3F7E0032EDF4 /* RendererHelper.swift in Sources */,
 				321069562821654C0032EDF4 /* HomeView.swift in Sources */,
+				3208A843283D088900A68CDA /* FilterShader.metal in Sources */,
 				327FE13E2820129C003CE609 /* SceneDelegate.swift in Sources */,
 				32106952282163010032EDF4 /* HomeViewModel.swift in Sources */,
 				321069632823C7290032EDF4 /* HomeButtonTableView.swift in Sources */,
@@ -408,7 +412,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -436,7 +440,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
