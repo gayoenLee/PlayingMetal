@@ -55,7 +55,7 @@ class CarViewModel : NSObject{
         self.height = Int(self.inputImg.size.height)
         
         super.init()
-        delegate = self
+        mtkView.delegate = self
     }
     
     
